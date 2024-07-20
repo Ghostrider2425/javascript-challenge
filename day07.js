@@ -1,4 +1,5 @@
 // Activity 1
+
 const books = {
     title : "Harry Potter",
     author : "JK Rowling",
@@ -63,3 +64,9 @@ const bookTwo = {
 for(const prop in bookTwo){
     console.log(`${prop} of book is ${bookTwo[prop]}`);
 }
+
+const keys = Object.keys(bookTwo)
+console.log(keys);
+
+const values = Object.values(bookTwo)
+console.log(values);

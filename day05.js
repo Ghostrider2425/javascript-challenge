@@ -1,5 +1,6 @@
 // Activity 1
 
+
 function checkEvenOdd(num){
     if(num%2==0){
         console.log(" Given Number is even");

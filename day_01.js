@@ -1,4 +1,5 @@
 // activity 1
+
 var num = 20
 console.log(num);
 
