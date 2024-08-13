@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family: "Poppins" , sans-serif;
+    colr : #fff;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    min-height : 100vh;
+    overflow : hidden;
+    background-color :#F0F8FF;
+}
+
+.container {
+    height : 100vh;
+    width : 100vw;
+    background-color : rgba(0,0,0,0.5);
+    padding : 30px;
+    text-align : center;
+}
+
+.info {
+    margin-bottom : 20px;
+    display : grid;
+    grid-template-columns : repeat(2,1fr); // 2 columns 
+    gap : 10px;
+}
+
+.title {
+    grid-column : span 2;
+    font-size : 20px;
+    font-weight : bold;
+    margin-bottom: 10px;
+}
+.loc{
+    font-szie : 20px;
+}
+.date-time {
+    margin-bottom : 15px;
+}
+
+.day,.date {
+    display : block;
+    font-size : 15px;
+    margin-bottom : 5px;
+}
+
+.time {
+    font-size : 16px;
+    color : white;
+}
+.city-input {
+    display : flex;
+    justify-content : center;
+    margin-bottom : 15px;
+}
+
+.cityName {
+    padding : 2px;
+    font-size : 15px;
+    font-weight : 500;
+    border : none;
+   border-radius : 5px;
+   outline : none;
+   margin-right : 10px;
+   width : 20%;
+}
+
+.btn {
+    padding : 12px 20px;
+    font-size: 15px;
+    font-weight : 500;
+    border : none;
+    background-color : #99FFFF;
+    color : #000;
+    border-radius : 5px;
+    cursor : pointer;
+    transition : background-color 0.5s ease;
+}
+
+.btn:hover {
+    backforund-color : #583dbb;
+}
+
+.weather-info {
+    margin-top : 15px;
+}
+
+.temp {
+    font-szie : 35px;
+    font-weight: bold;
+    margin : 50px 0;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : row;
+    gap : 10px;
+}
+
+.condition {
+    font-szie : 30px;
+    font-weight : bold;
+}
+@media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .info {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    }
+  
+    .loc {
+      font-size: 18px;
+    }
+  
+    .day,
+    .date {
+      font-size: 16px;
+    }
+  
+    .time {
+      font-size: 14px;
+    }
+  
+    .cityName {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .btn {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    .temp {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .info {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+      grid-template-rows: repeat(2, auto); /* 2 rows */
+    }
+  
+    .loc {
+      font-size: 16px;
+    }
+  
+    .day,
+    .date {
+      font-size: 14px;
+    }
+  
+    .time {
+      font-size: 12px;
+    }
+  
+    .cityName {
+      width: 60%;
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .btn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  
+    .temp {
+      font-size: 30px;
+    }
+  }
